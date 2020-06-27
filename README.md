@@ -16,7 +16,7 @@
 <br>
 
 <p align="center">
-  <img alt="Be The Hero" src=".github/mockup.png" width="100%">
+  <img alt="Be The Hero" src="./.github/mockups.png" width="100%">
 </p>
 
 ## :rocket: Tecnologias
