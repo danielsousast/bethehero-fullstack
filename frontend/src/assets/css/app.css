@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 14px Roboto, Arial, Helvetica, sans-serif;
+  background-color: #f0f0f5;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea {
+  font: 400 18px Roboto, Arial, Helvetica, sans-serif;
+} 
+
+button {
+  cursor: pointer;
+}
+
+form input {
+  width: 100%;
+  height: 60px;
+  color: #333;
+  border: 1px solid #dcdce6;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+
+form textarea {
+  width: 100%;
+  min-height: 140px;
+  max-height: 280px;
+  color: #333;
+  border: 1px solid #dcdce6;
+  border-radius: 8px;
+  padding: 16px 24px;
+  line-height: 24px;
+  resize: vertical;
+}
+
+/* Login page */
+
+.login-container {
+  width: 100%;
+  max-width: 1120px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.input-login {
+  margin-bottom: 10px;
+}
+
+.login-container .section-form {
+  width: 100%;
+  max-width: 350px;
+  margin-right: 40px;
+}
+
+.login-container .section-form  form {
+  margin-top: 80px;
+}
+
+.section-form  form h1 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  color: #41414d;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.link svg {
+  margin-right: 8px;
+}
+
+.button {
+  width: 100%;
+  height: 60px;
+  background: #e02041 ;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 16px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  transition:  filter 0.1s;
+}
+
+.button:hover {
+  filter: brightness(90%);
+}
+
+.login-container .heroes {
+  width: 500px;
+}
+
+/*   Register Page  && NewIncident Page */
+
+.box-container {
+  width: 100%;
+  max-width: 1120px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-content {
+  width: 100%;
+  padding: 96px;
+  background: #f0f0f5;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}  
+
+.box-content section { 
+  width: 100%;
+  max-width: 380px;
+}
+
+.box-content section h1 {
+  margin: 64px 0 32px;
+  font-size: 32px;
+} 
+
+.box-content section p{
+  font-size: 18px;
+  color: #737380;
+  line-height: 32px;
+} 
+
+.box-content form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.box-content form input,
+.box-content form textarea{
+  margin-top: 8px;
+}
+
+.box-content form .input-group {
+  display: flex;
+
+}
+
+.box-content form .input-group input + input {
+  margin-left: 8px;
+}
+
+/*   Profile Page  */
+
+.pagination {
+  align-self: center;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  width: auto;
+  padding: 0 10px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  background: transparent;
+  transition: border-color 0.2s;
+  color: #e02041;
+  font-weight: bold;
+  background-color: #fff;
+
+  -webkit-box-shadow: 0px 0px 7px 5px rgba(0,0,0,0.04); 
+  box-shadow: 0px 0px 7px 5px rgba(0,0,0,0.04);
+}
+
+.pagination button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  text-align: center;
+  width: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #41414D;
+}
+
+.profile-container {
+  width: 100%;
+  max-width: 1180px;
+  padding: 0 30px;
+  margin: 32px auto;
+}
+
+.profile-container header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  line-height: 64px;
+}
+
+.profile-container header .header-logo{
+  justify-content: space-between;
+  height: 64px;
+}
+
+.profile-container header img{
+  height: 64px;
+}
+
+
+.profile-container header span{
+  font-size: 20px;
+  align-self:center;
+  position: absolute;
+  margin-left: 24px;
+}
+
+.profile-container header a {
+  width: 260px;
+  margin-left: auto;
+  margin-top: 0;
+}
+
+.profile-container header button {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  margin-left: 16px;
+  transition: border-color 0.2s;
+  color: #e02041;
+  font-weight: bold;
+  background-color: #fff;
+  
+  -webkit-box-shadow: 0px 0px 9px 3px rgba(0,0,0,0.04); 
+  box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.04);
+}
+
+.profile-container header button:hover {
+  background-color:rgb(252, 252, 252);
+}
+
+.profile-container h1 {
+  margin-top: 80px;
+  margin-bottom: 24px;
+}
+
+.profile-container ul{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+  list-style: none;
+}
+
+.profile-container ul li{
+  position: relative;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.profile-container ul li button{
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  border: 0;
+  background: transparent;
+}
+
+.profile-container ul li .edit-button {
+  position: absolute;
+  right: 54px;
+  top: 24px;
+  border: 0;
+  background: transparent;
+}
+
+.profile-container ul li button:hover{
+  opacity: 0.8;
+}
+
+.profile-container ul li strong{
+  display: block;
+  margin-bottom: 14px;
+  color: #41414d;
+}
+
+.profile-container ul li p + strong{
+  margin-top: 26px;
+}
+
+.profile-container ul li p{
+  color: #737380;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+@media(max-width:750px){
+  .ongname {
+    display: none;
+  }
+}
+
+@media(max-width:600px){
+  .profile-container ul{
+    grid-template-columns: 1fr;
+    grid-gap: 14px;
+  } 
+
+  .profile-container header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .profile-container header .header-logo{
+    margin-bottom: 20px;
+  }
+}
+
+
+@media(max-width:400px){
+  header .header-buttons {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button {
+    width: 100%;
+    margin: auto;
+  }
+  .profile-container header button {
+    width: 100%;
+    margin-left: 0;
+    align-self: center;
+    margin-top: 15px;
+  }
+}

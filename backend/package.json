@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "test": "cross-env NODE_ENV=test jest"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "celebrate": "^12.1.1",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.1",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "@sucrase/jest-plugin": "^2.0.0",
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.17.1",
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4",
+    "sucrase": "^3.15.0",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "transform": {
+      ".(js|jsx|ts|tsx)": "@sucrase/jest-plugin"
+    }
+  }
+}
